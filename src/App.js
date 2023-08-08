@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import Movie from "./Components/Movie";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Movie />
     </div>
   );
 }
 
 export default App;
+
+// App.js
+// import React from "react";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import SearchInput from "./Components2/SearchInput";
+// import SearchResults from "./Components2/SearchResults";
+// import MovieDetails from "./Components2/MovieDetails";
+
+// function App() {
+//   return (
+//     <Router>
+//       <Routes>
+//         {" "}
+//         {/* Use Routes instead of Switch */}
+//         <Route path="/" element={<SearchInput />} />
+//         <Route path="/search" element={<SearchResults />} />
+//         <Route path="/movie/:id" element={<MovieDetails />} />
+//       </Routes>{" "}
+//       {/* Use Routes instead of Switch */}
+//     </Router>
+//   );
+// }
+
+// export default App;
